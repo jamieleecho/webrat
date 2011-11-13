@@ -286,11 +286,11 @@ For example:
     end
 
     def current_host
-      URI.parse(current_url).host || @custom_headers["Host"] || "www.example.com"
+      URI.parse(current_url).host || @custom_headers["Host"] || "example.org"
     end
 
     def response_location_host
-      URI.parse(response_location).host || "www.example.com"
+      URI.parse(response_location).host || "example.org"
     end
 
     def reset
